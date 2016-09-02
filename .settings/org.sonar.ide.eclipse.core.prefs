@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-extraProperties=
+extraProperties=sonar.language\=java
 projectKey=com.github.jeanlks\:cs20162-aula02
 serverUrl=http\://localhost\:9000
 version=2

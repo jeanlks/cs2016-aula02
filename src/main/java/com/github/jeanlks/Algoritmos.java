@@ -5,16 +5,14 @@ package com.github.jeanlks;
  */
 public class Algoritmos {
 	/**
-	 * @param i
-	 *            serve para variável de iteração.
-	 * @param s
-	 *            mantém a soma da conta a cada ciclo de i.
+	 * 
 	 * @param n
 	 *            número que se deseja saber a soma dos naturais
 	 * 
 	 * @return soma dos números naturais até n
 	 */
 	public static int somaNaturais(int n) {
+
 		if (n <= 0) {
 			throw new IllegalArgumentException("numero menor que zero");
 		}
@@ -33,10 +31,6 @@ public class Algoritmos {
 	 *            número de parcelas
 	 * @param b
 	 *            valor da parcela
-	 * @param i
-	 *            variável de iteração
-	 * @param s
-	 *            variável de soma
 	 * 
 	 * @return resultado do produto
 	 */
@@ -65,10 +59,6 @@ public class Algoritmos {
 	 *            número natural
 	 * @param y
 	 *            valor da potencia
-	 * @param i
-	 *            variável de iteração
-	 * @param potencia
-	 *            variável para valor de potencia
 	 * 
 	 * @return resultado da potencia
 	 */
@@ -88,11 +78,6 @@ public class Algoritmos {
 	/**
 	 * @param n
 	 *            número para calculo
-	 * @param j
-	 *            valor do ultimo numero
-	 * @param i
-	 *            valor do primeiro numero
-	 * 
 	 * @return resultado booleano se o valor corresponde ou nao a propriedade
 	 *         3025
 	 */
@@ -135,7 +120,7 @@ public class Algoritmos {
 		if (n < 1) {
 			throw new IllegalArgumentException("numero menor que 1");
 		}
-		
+
 		int i = 2;
 		while (i <= (n - 1)) {
 			if (n % i == 0) {
@@ -145,7 +130,23 @@ public class Algoritmos {
 		}
 		return true;
 	}
-//	 public static void main(String []args){
-//	 System.out.println(Algoritmos.primo(3));
-//	 }
+
+	/**
+	 * @param n
+	 *            número para calculo
+	 * @return resultado retorna o numero harmonico
+	 */
+	public static int numeroHarmonico(int n) {
+		if (n < 1) {
+			throw new IllegalArgumentException("numero menor que 1");
+		}
+		int i = 2;
+		int s = 1;
+		while (i <= n) {
+			s = s + (1 / i);
+			i++;
+		}
+		return s;
+	}
+
 }

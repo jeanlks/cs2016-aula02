@@ -121,6 +121,18 @@ public class AlgoritmosTest {
 	public void numeroNaoPrimo() {
 		assertFalse(Algoritmos.primo(10));
 	}
+	
+	// Casos de teste para Numero Harmonico
+	@Test(expected = IllegalArgumentException.class)
+	public void numeroMenorQue1NumeroHarmonico() {
+
+		Algoritmos.numeroHarmonico(0);
+	}
+	@Test
+	public void valorArbitrarioNumeroHarmonico() {
+		assertEquals(1,Algoritmos.numeroHarmonico(10));
+	}
+	
 
 	@Test
 	public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
