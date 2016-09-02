@@ -105,6 +105,23 @@ public class AlgoritmosTest {
 		assertFalse(Algoritmos.propriedade153(154));
 	}
 
+	// Casos de teste para Numero Primo
+	@Test(expected = IllegalArgumentException.class)
+	public void numeroMenorQue1Primo() {
+
+		Algoritmos.primo(0);
+	}
+
+	@Test
+	public void numeroPrimo() {
+		assertTrue(Algoritmos.primo(3));
+	}
+
+	@Test
+	public void numeroNaoPrimo() {
+		assertFalse(Algoritmos.primo(10));
+	}
+
 	@Test
 	public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
 		new Algoritmos();
