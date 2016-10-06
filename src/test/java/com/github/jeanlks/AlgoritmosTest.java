@@ -134,9 +134,4 @@ public class AlgoritmosTest {
 	}
 	
 
-	@Test
-	public void apenasParaAgradarJacocoTool100PorCentoCobertura() {
-		new Algoritmos();
-	}
-
 }
